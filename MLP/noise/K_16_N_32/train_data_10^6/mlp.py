@@ -70,7 +70,7 @@ def get_random_batch_data(x, y, batch_size):
 # Parameters setting
 N = 32
 K = 16
-data_path = '../../../../RNN/noise/K_16_N_32/train_data_10^6/data/'
+data_path = 'data/'
 num_epoch = 10**5
 batch_size = 128
 train_snr = np.arange(-2, 22, 2)
