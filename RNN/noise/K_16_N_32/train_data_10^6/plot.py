@@ -39,7 +39,8 @@ for i in range(len(train_ratio)):
 best_train_snr_index = np.zeros(len(train_ratio))
 for i in range(len(train_ratio)):
     best_train_snr_index[i] = np.argmin(NVE[i, :])
-
+# 2018.05.19 fix bugs related to data type   
+best_train_snr_index = best_train_snr_index.astype(int)
 # Plot the ber of test_snr about train_ratio
 
 plt.figure()
